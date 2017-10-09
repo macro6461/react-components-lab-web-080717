@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { OlderCoaster, InFrontOfYou, ButcherShop } from '../src/index'
+import { OlderCoaster, InFrontOfYou, ButcherShop } from '../src/index.js'
 
 describe('OlderCoaster', () => {
   let wrapper;
@@ -11,7 +11,7 @@ describe('OlderCoaster', () => {
     wrapper = shallow(React.createElement(OlderCoaster));
   });
 
-  it('renders withouth crashing', () => {
+  it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<OlderCoaster />, div);
   });
